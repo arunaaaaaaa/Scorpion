@@ -1,7 +1,7 @@
 <h1>Introduction</h1>
 This test plan outlines the testing process for a login/signup and a landing page. The login/signup page is where users can create an account or log in to an existing one, while the landing page is the first page that users will see after logging in or creating an account. The goal of this testing is to ensure that these pages are functional, easy to use, and meet the requirements of the project.
 
-<h2>Test Items</h2>
+<h1>Test Items</h1>
 Login page<br>
 Signup page<br>
 Landing page<br>
