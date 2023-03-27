@@ -6,37 +6,37 @@ Login page<br>
 Signup page<br>
 Landing page<br>
 <h3>Features to be Tested</h3>
-<h4>Login Page</h4>
+<h2>Login Page</h2>
 User login<br>
 Forgot password feature<br>
 Error messages for incorrect login details<br>
 Redirect to landing page upon successful login<br>
-<h5>Signup Page</h5>
+<h2>Signup Page</h2>
 User signup<br>
 Password validation for length and complexity<br>
 Email address validation<br>
 Error messages for incorrect or existing username/email address<br>
 Redirect to landing page upon successful signup<br>
-<h6>Landing Page</h6>
+<h2>Landing Page</h2>
 Display of all content (images and text)<br>
 Functionality of all links and buttons<br>
 Display of user account information (if applicable)<br>
 Navigation to login/signup page<br>
 Logout functionality<br>
-<h7>Approach</h7>
+<h1>Approach</h1>
 The testing approach will be manual testing, using a combination of exploratory testing and test cases.
 
-Pass/Fail Criteria
-<h8>Login Page</h8>
+<h1>Pass/Fail Criteria</h1>
+<h2>Login Page</h2>
 Pass: User can login successfully and is redirected to the landing page.<br>
 Fail: User cannot login, error messages are not displayed, or user is not redirected to the landing page.<br>
-<h9>Signup Page</h9>
+<h2>Signup Page</h2>
 Pass: User can signup successfully and is redirected to the landing page.<br>
 Fail: User cannot signup, error messages are not displayed, or user is not redirected to the landing page.<br>
-<h10>Landing Page</h10>
+<h2>Landing Page</h2>
 Pass: All content is displayed correctly, all links and buttons are functional, user account information is displayed correctly (if applicable), user can navigate to login/signup page and log out successfully.<br>
 Fail: Content is not displayed correctly, links or buttons are not functional, user account information is not displayed correctly, user cannot navigate to login/signup page or log out successfully.<br>
-<h11>Testing Tasks</h11>
+<h1>Testing Tasks</h1>
 Verify the accessibility and functionality of the login page<br>
 Verify the accessibility and functionality of the signup page<br>
 Verify the accessibility and functionality of the landing page<br>
@@ -47,7 +47,7 @@ Test navigation between pages and the ability to log out successfully<br>
 QA team: Responsible for designing and executing the test plan, reporting defects, and verifying fixes.<br>
 Development team: Responsible for fixing any defects found during testing.<br>
 Project manager: Responsible for scheduling testing and ensuring that the project meets its goals and deadlines.<br>
-<h13>Schedule</h13>
+<h1>Schedule</h1>
 Week 1: Design and review the test plan.<br>
 Week 2-3: Execute the test plan and report defects.<br>
 Week 4-5: Verify the fixes and perform regression testing.<br>
