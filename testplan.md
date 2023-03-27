@@ -5,7 +5,7 @@ This test plan outlines the testing process for a login/signup and a landing pag
 Login page<br>
 Signup page<br>
 Landing page<br>
-<h3>Features to be Tested</h3>
+<h1>Features to be Tested</h1>
 <h2>Login Page</h2>
 User login<br>
 Forgot password feature<br>
@@ -15,16 +15,12 @@ Redirect to landing page upon successful login<br>
 User signup<br>
 Password validation for length and complexity<br>
 Email address validation<br>
-Error messages for incorrect or existing username/email address<br>
 Redirect to landing page upon successful signup<br>
 <h2>Landing Page</h2>
 Display of all content (images and text)<br>
 Functionality of all links and buttons<br>
-Display of user account information (if applicable)<br>
 Navigation to login/signup page<br>
 Logout functionality<br>
-<h1>Approach</h1>
-The testing approach will be manual testing, using a combination of exploratory testing and test cases.
 
 <h1>Pass/Fail Criteria</h1>
 <h2>Login Page</h2>
