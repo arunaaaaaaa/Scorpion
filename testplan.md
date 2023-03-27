@@ -30,7 +30,7 @@ Pass/Fail Criteria
 <h8>Login Page</h8>
 Pass: User can login successfully and is redirected to the landing page.<br>
 Fail: User cannot login, error messages are not displayed, or user is not redirected to the landing page.<br>
-<h9>Signup Page<h9/>
+<h9>Signup Page</h9>
 Pass: User can signup successfully and is redirected to the landing page.<br>
 Fail: User cannot signup, error messages are not displayed, or user is not redirected to the landing page.<br>
 <h10>Landing Page</h10>
