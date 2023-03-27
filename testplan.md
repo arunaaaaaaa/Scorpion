@@ -43,7 +43,7 @@ Verify the accessibility and functionality of the landing page<br>
 Test for usability, including page loading times, mobile responsiveness, and consistency of color scheme and typography<br>
 Verify the accuracy and effectiveness of error messages<br>
 Test navigation between pages and the ability to log out successfully<br>
-<h12>Responsibilities</h12>
+<h1>Responsibilities</h1>
 QA team: Responsible for designing and executing the test plan, reporting defects, and verifying fixes.<br>
 Development team: Responsible for fixing any defects found during testing.<br>
 Project manager: Responsible for scheduling testing and ensuring that the project meets its goals and deadlines.<br>
