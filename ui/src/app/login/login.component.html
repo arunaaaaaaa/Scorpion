@@ -1,0 +1,42 @@
+<button style="position:fixed;right:20px;width:90px;height:30px; border:1px solid black;background-color: aliceblue;top:30px" (click)="login()">Login</button>
+
+<h1 *ngIf="!signinToogle"style="text-align: center;align-items: center;position: absolute;top:50%;right:50%">HELLO WORLD</h1>
+  <div *ngIf="signinToogle" style="position: absolute;top:25%;right:25% ;left:25%;width:600px;height:700px;border:3px solid black;border-radius: 10px;">
+  <h3 style="text-align:center" *ngIf="!signup">LOGIN</h3>
+  <h3 style="text-align:center" *ngIf="signup">SIGNUP</h3>
+
+  <form class="example-form" *ngIf="!signup">
+    <label>User Name</label>
+    <input matInput placeholder="Enter your name" name="usename"
+    [(ngModel)] ="username">
+    <label>Password</label>
+    <input matInput placeholder="Enter your password" value="" name="password" type="password" [(ngModel)]= "Pass">
+     <p *ngIf="lengthpass">Password Length should be more than 8 </p>
+      <p *ngIf="numbercheck">Password should contain numbers</p>
+      <p *ngIf="lettercheck">Password should contain small letters</p>
+      <p *ngIf="capscheck">Password should contain Capital letters</p>
+      <p *ngIf="Specialcharcheck">Password should contain Special letters</p>
+    <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+     <p *ngIf="!signup">dont have an account<a (click)="signup=true">Signup</a></p>
+
+
+    <span *ngIf="show"> <button mat-button color="accent">Login success !!</button></span>
+    </form>
+    <form class="example-form" *ngIf="signup">
+      <label>User Name</label><br>
+      <input matInput placeholder="Enter your name" name="usename"
+      [(ngModel)] ="username"><br>
+      <label>Password</label><br>
+      <input matInput placeholder="Enter your password" value="" name="password" type="password" [(ngModel)]= "Pass"><br>
+      <p *ngIf="lengthpass">Password Length should be more than 8 </p>
+      <p *ngIf="numbercheck">Password should contain numbers</p>
+      <p *ngIf="lettercheck">Password should contain small letters</p>
+      <p *ngIf="capscheck">Password should contain Capital letters</p>
+      <p *ngIf="Specialcharcheck">Password should contain Special letters</p>
+      <label>Confirm Password</label><br>
+      <input matInput placeholder="Confirm Password" type="password" name="password" [(ngModel)]="ConfirmPass">
+      <button mat-raised-button color="primary" (click)="Signin()">Submit</button>
+      <span *ngIf="show"> <button mat-button color="accent">Login success !!</button></span>
+      </form>
+     <p *ngIf="signup">have an account<a (click)="signup=false">login</a></p>
+  </div>
