@@ -11,12 +11,9 @@
     [(ngModel)] ="username">
     <label>Password</label>
     <input matInput placeholder="Enter your password" value="" name="password" type="password" [(ngModel)]= "Pass">
-     <p *ngIf="lengthpass">Password Length should be more than 8 </p>
-      <p *ngIf="numbercheck">Password should contain numbers</p>
-      <p *ngIf="lettercheck">Password should contain small letters</p>
-      <p *ngIf="capscheck">Password should contain Capital letters</p>
-      <p *ngIf="Specialcharcheck">Password should contain Special letters</p>
+  
     <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+    <p *ngIf="userExists">USER DOESNOT EXISTS</p>
      <p *ngIf="!signup">dont have an account<a (click)="signup=true">Signup</a></p>
 
 
