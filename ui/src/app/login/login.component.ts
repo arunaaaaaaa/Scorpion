@@ -36,10 +36,10 @@ public submit(){
   let valcheck=this.validationcheck(this.Pass);
 if(this.lengthpass==false&& this.lettercheck==false&&this.numbercheck==false&&this.capscheck==false&&this.Specialcharcheck==false&&this.Pass!=null&&this.Pass!=''){
   console.log("user name is " + this.username)
-const body = { name: this.username, password:this.Pass };
-// this.http.post('/login', body).subscribe((data) => {
-//   console.log(data);
-// });
+const body = { username: this.username, password:this.Pass };
+this.http.post('http://localhost:3000/login', body).subscribe((data) => {
+  console.log(data);
+});
 this.clear();
 }
 }
