@@ -9,14 +9,14 @@ module.exports={
         return new Promise((resolve,reject)=>{
             db.CheckUser(username,Password,'login').then((data)=>{
                 console.log(data);
-                if(data.length!=0)
+                if(data!='user doesnot exist')
                 {
                 token=this.GenerateJWT({username:username});
-                response=[{
+                response={
                     token:token,
                     expiresIn: '1800s',
                     username:data.username,
-                }];
+                };
                 resolve(response);
             }
             else{
