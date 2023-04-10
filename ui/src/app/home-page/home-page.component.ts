@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { take } from 'rxjs';
 interface Articles{
   author?:String;
@@ -20,12 +21,21 @@ export class HomePageComponent {
   to:any=localStorage.getItem('token');
   newsData:any;
   articledetails?:Articles[];
-constructor(private httpClient:HttpClient)
-{}
+constructor(private httpClient:HttpClient,private roter:Router)
+{
+  
+}
 ngOnInit(){
+  console.log(this.to)
+  if(this.to==null){
+    this.roter.navigateByUrl("")
+  }
   this.fetchData();
 }
-logout(){}
+logout(){
+  localStorage.clear()
+  this.roter.navigateByUrl("");
+}
 fetchData(){
   this.httpClient.get('http://localhost:3000/home').pipe(take(1)).subscribe((data) => {
     console.log(data);
