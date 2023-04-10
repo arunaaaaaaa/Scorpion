@@ -22,13 +22,9 @@ Date: 03.27.23
 | -------------- | ------------------------ | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
 | 1            | Ajay                | Fail      | Error occured when executing the query command                                                                         |
 | 2            | Ajay                | Fail      | API returns the result without proper response code                                                                    |
-| 3            | Ajay                | Pass      | Login API return 200 code when the username and password matched the row in the database                               |
-| 4            | Ajay                | Pass      | Login API return 401 code when the username and password does not match any row in the database                        |
-| 5            | Ajay                | Pass      | Signup API return 200 code when the username is not found in the database                                              |
-| 6            | Ajay               | Pass      | Signup API return 401 code when the username found in the database and returns duplicate username as the response body |
-| 7            | Ajay                | Pass      | Pagination API return "page=" when the next page is clicked                                                            |
-| 8            | Ajay                | Pass      | Integration testing for setting return user data when a existing user is logged in                                     |
-| 9            | Ajay                | Pass      | Integration testing for setting return general data when a no user is logged in                                        |
+| 3           | Ajay                | Pass      | Pagination API return "page=" when the next page is clicked                                                            |
+| 4           | Ajay                | Pass      | Integration testing for setting return user data when a existing user is logged in                                     |
+| 5            | Ajay                | Pass      | Integration testing for setting return general data when a no user is logged in                                        |
 
 # 
 
