@@ -34,7 +34,7 @@ Apply unit tests to the basic components such as buttons, dialogs to make sure t
 
 Apply unit tests for the homepage landing and the pagination.Unit tests only tests the set of data and its functionality.It will not catch any errors in integration.We use integration testing for that.
 
-# **INTEGRATION TEST STRATEGY:**
+# **INTEGRATION TEST STRATEGY**
 
 •	Apply integration tests to check the unit tested modules one by one and test the behaviour as a combined unit and document them properly. Ascertain that the program   is free of errors and that it meets the required functional requirements.
 
