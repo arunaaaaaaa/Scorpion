@@ -36,19 +36,17 @@ Date: 04.10.23
 | 1            | Ajay                    | Fail      | Login button does not redirect user to the correct page                             |
 | 2            | Ajay                    | Fail      | Username not displaying after login                                                 |
 | 3            | Ajay                    | Fail      | Logout button not displayed after logged in                                         |
-| 4            | Ajay                    | Pass      | Return 200 code and correct response when correct combination is submitted in login |
-| 5            | Ajay                    | Pass      | Display error message when wrong combination is submitted in login                  |
-| 6            | Ajay                    | Pass      | Return 200 code when a non duplicate username is registered                         |
-| 7            | Ajay                    | Pass      | Display error message when trying to register a pre-exist user                      |
-| 8            | Ajay                    | Fail      | Password requirements are not mandatory                                             |
-| 9            | Ajay                    | Pass      | username and password are required in login                                         |
-| 10           | Ajay                    | Pass      | username and password are required in Register                                      |
-| 11           | Ajay                    | Pass      | User Table created with required columns                                            |
-| 12           | Ajay                   | Pass      | Display error message when search data entry doesn't meet search criteria           |
-| 13           | Ajay                    | Pass      | Display user catergory when trying user is logged in                                |
-| 14           | Ajay                    | pass      | Setting button correctly navigates to the setting page                              |
-| 15           | Ajay                    | pass      | Integration test for api and pagination                                             |
-| 16           | Ajay                    | pass      | Integration test for pagination after logged in                                     |
-| 17           | Ajay                    | pass      | Manual test for landing page loading                                                |
-| 18           | Ajay                    | fail      | Integration Test for prefered articles displaying on home page                      |
-| 19           | Ajay                    | pass      | Integration Test for prefered articles displaying on home page                      |
+| 4            | Ajay                    | Pass      | Display error message when wrong combination is submitted in login                                |
+| 5            | Ajay                    | Pass      | Display error message when trying to register a pre-exist user                      |
+| 6           | Ajay                    | Fail      | Password requirements are not mandatory                                             |
+| 7            | Ajay                    | Pass      | username and password are required in login                                         |
+| 8           | Ajay                    | Pass      | username and password are required in Register                                      |
+| 9           | Ajay                    | Pass      | User Table created with required columns                                            |
+| 10           | Ajay                   | Pass      | Display error message when search data entry doesn't meet search criteria           |
+| 11           | Ajay                    | Pass      | Display user catergory when trying user is logged in                                |
+| 12           | Ajay                    | pass      | Setting button correctly navigates to the setting page                              |
+| 13           | Ajay                    | pass      | Integration test for api and pagination                                             |
+| 14           | Ajay                    | pass      | Integration test for pagination after logged in                                     |
+| 15           | Ajay                    | pass      | Manual test for landing page loading                                                |
+| 16           | Ajay                    | fail      | Integration Test for prefered articles displaying on home page                      |
+| 17           | Ajay                    | pass      | Integration Test for prefered articles displaying on home page                      |
