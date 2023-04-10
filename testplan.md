@@ -6,8 +6,7 @@ which includes login, register functions. The application is developed with Reac
 and Node Express for the backend. MySQL database is utilized to store the user information and will
 be connected by the Node Express. Middle Tier RESTful APIs are implemented to transmit the data.
 In the sprint 2, we are going to develop the news feed functions with modifications made to the sprint 1,
-unit testing will be used to improve the efficiency of testing. At least 10 unit tests will be added
-for the frontend/backend. Part of the development will follow the test-driven development process.
+unit testing will be used to improve the efficiency of testing.
 
 # Test Items
 
