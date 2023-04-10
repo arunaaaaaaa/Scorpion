@@ -1,10 +1,12 @@
 const express = require('express')
 var cors = require('cors')
+var test=require('./services/authServices')
 var app = express()
+var bodyparser=require('body-parser')
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(cors())
 const port = 3000
-
+var jsonParser=bodyparser.json()
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
@@ -14,7 +16,7 @@ app.get('/home',(req,res)=>{
       res.json(data);
   })
   })
-  app.post('/login', (req, res,next) => {
+  app.post('/login',jsonParser, (req, res,next) => {
      test.logincheck(req.body.username,req.body.password).then((data)=>{
       //    console.log(JSON.stringify(data))
       //    response=[{
@@ -28,7 +30,7 @@ app.get('/home',(req,res)=>{
          res.json(data);
      });
   })
-  app.post('/signin',(req,res,next)=>{
+  app.post('/signin',jsonParser,(req,res,next)=>{
       console.log(req.body.username+""+req.body.password);
        test.sigin(req).then((data)=>{
           res.json({
@@ -55,7 +57,7 @@ app.get('/home',(req,res)=>{
           res.json(data);
       })
   })
-  app.post('/articleDetails',login.authenticateToken,(req,res)=>{
+  app.post('/articleDetails',test.authenticateToken,(req,res)=>{
       article.ArticleDetails(req.body.articleheader).then((data)=>{
           if(data==null)
           {
@@ -74,22 +76,22 @@ app.get('/home',(req,res)=>{
               
           })
   })
-  app.post('/topic',login.authenticateToken,(req,res)=>{
+  app.post('/topic',test.authenticateToken,(req,res)=>{
       formsService.addTopic(req.body.topic,req.body.username).then((data)=>{
           res.json(data);
       })
   })
-  app.post('/getTopic',login.authenticateToken,(req,res)=>{
+  app.post('/getTopic',test.authenticateToken,(req,res)=>{
       formsService.getFormsComment(req.body.topic).then((data)=>{
              res.json(data)
       })
   })
-  app.post('/submitcomment',login.authenticateToken,(req,res)=>{
+  app.post('/submitcomment',test.authenticateToken,(req,res)=>{
       formsService.addComments(req.body.topic,req.body.username,req.body.comment,req.body.dateTime).then((data)=>{
           res.json(data)
       })
   })
-  app.get('/gettopics',login.authenticateToken,(req,res)=>{
+  app.get('/gettopics',test.authenticateToken,(req,res)=>{
       formsService.getTopics().then((data)=>{
           res.json(data)
       })

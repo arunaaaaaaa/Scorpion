@@ -1,5 +1,5 @@
 const dotenv = require('dotenv');
-const db= require('./databaset');
+const db= require('./database');
 const jwt = require('jsonwebtoken');
 dotenv.config();
 
@@ -9,15 +9,18 @@ module.exports={
         return new Promise((resolve,reject)=>{
             db.CheckUser(username,Password,'login').then((data)=>{
                 console.log(data);
-                if(data=='USEREXISTS')
+                if(data.length!=0)
                 {
                 token=this.GenerateJWT({username:username});
                 response=[{
                     token:token,
                     expiresIn: '1800s',
-                    username:details.username,
+                    username:data.username,
                 }];
                 resolve(response);
+            }
+            else{
+                resolve("user doesnot exists")
             }
             });
         })
