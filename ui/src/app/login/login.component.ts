@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Login } from '../model/login.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,14 +14,16 @@ export class LoginComponent {
   lettercheck:Boolean=false;
   capscheck:Boolean=false;
   Specialcharcheck:Boolean=false;
+  userExists:Boolean=false;
   title = 'textUI'
  signinToogle!: Boolean; 
+
  username : string ="";
 Pass: string ="";
 ConfirmPass:string="";
 show: boolean= false;
 signup:boolean=false;
-constructor(private http: HttpClient ) { }
+constructor(private http: HttpClient,private router:Router ) { }
   ngOnInit(){
   }
 
@@ -33,12 +37,22 @@ public submit(){
   this.lettercheck=false;
   this.capscheck=false;
   this.Specialcharcheck=false;
+  this.userExists=false;
   let valcheck=this.validationcheck(this.Pass);
-if(this.lengthpass==false&& this.lettercheck==false&&this.numbercheck==false&&this.capscheck==false&&this.Specialcharcheck==false&&this.Pass!=null&&this.Pass!=''){
+if(this.Pass!=null&&this.Pass!=''){
   console.log("user name is " + this.username)
 const body = { username: this.username, password:this.Pass };
 this.http.post('http://localhost:3000/login', body).subscribe((data) => {
-  console.log(data);
+  if(data=='user doesnot exists'){
+     this.userExists=true;
+  }
+  else{
+    const values=Object.values(data);
+     console.log(values);
+     localStorage.setItem('token',values[0])
+     localStorage.setItem('username',values[2])
+     this.router.navigateByUrl('/home')
+  }
 });
 this.clear();
 }
