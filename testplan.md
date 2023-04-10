@@ -1,6 +1,6 @@
 # Introduction
 
-This is the test plan markdown file for the Sprint 2 in CS684 ***Team Scorpion***.
+This is the test plan markdown file for the Sprint 3 in CS684 ***Team Scorpion***.
 In the sprint 1, we developed a web based application which provides the basic authentication system
 which includes login, register functions. The application is developed with React for the front-end
 and Node Express for the backend. MySQL database is utilized to store the user information and will
