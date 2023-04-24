@@ -1,7 +1,3 @@
-**Introduction**
-
-This is the test plan markdown file for the Sprint 1 in CS684 Team Coding Donut. In the sprint 1, we developed a web based application which provides the basic authentication system which includes login, register functions. The application is developed with React for the front-end and Node Express for the backend. MySQL database is utilized to store the user information and will be connected by the Node Express. Middle Tier RESTful APIs are implemented to transmit the data. In the sprint 2, we are going to develop the news feed functions with modifications made to the sprint 1, unit testing will be used to improve the efficiency of testing. At least 10 unit tests will be added for the frontend/backend. Part of the development will follow the test-driven development process.In sprint 3, we are going to develop the custom home page and pagination. Unit test and Integration tests will be used to improve the efficiency of testing.Atleast 10 unit tests will be added for the frontend/backend.Test-driven development process will be used for better development.We go to the integration testing only after the functional testing is completed on each module of the application.
-
 **Test Items**
 
 Frontend UI features Backend Database Middle Tier APIs Features to be Tested
@@ -78,8 +74,8 @@ Implement backend API ebdpoint [GET /news/{user}]
 
 **Schedule**
 
-March 22 - April 14
-Prepare the unit tests needed for the test driven development and develop the code March 22 - April 14 Apply manual/unit tesing and debug according to the test results.
+April - May
+Prepare the unit tests needed for the test driven development and develop the code April - May Apply manual/unit tesing and debug according to the test results.
 
 **Regression System Test Strategy**
 
