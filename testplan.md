@@ -2,7 +2,7 @@
 
 Frontend UI features Backend Database Middle Tier APIs Features to be Tested
 
-Newsfeed Function Landing Page UI Setting dialog UI Database Table Component API Components Rendering Database Connection
+Newsfeed Function Landing Page UI Setting dialog UI Database Table Component API Components Rendering Database Connection.
 
 New features added to the homepage and the settings page are to be tested.
 
