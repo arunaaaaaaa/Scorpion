@@ -5,7 +5,7 @@ Date: 03.27.2023
 
 | Test Case ID | Name of Person testing | Pass/Fail | Comments                                                |
 | :------------- | ------------------------ | ----------- | --------------------------------------------------------- |
-| 1            | Ajay                  | Fail      | Error in database connection                            |
+| 1            | Ajay                  | Pass      | Error in database connection                            |
 | 2            | Ajay                   | Pass      | User Table created  |
 | 3            | Ajay                   | Pass      | User database created with required collections         |
 | 4            | Ajay                   | Pass      | database successfully created                                                                       |
