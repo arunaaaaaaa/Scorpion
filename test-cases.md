@@ -1,6 +1,6 @@
 # Database Test
 
-Date: 3.10.2022
+Date: 03.27.2023
 
 | Test Case ID | Name of Person testing | Description                                     | Pass/Fail Criteria                                    | Test Method    | Test Steps                                                                      | Pre-requistes           | Comments |
 | ------------ | ---------------------- | ----------------------------------------------- | ----------------------------------------------------- | -------------- | ------------------------------------------------------------------------------- | ----------------------- | -------- |
@@ -16,7 +16,7 @@ Date: 3.10.2022
 
 # API Test
 
-Date: 3.15.2022
+Date: 03.30.2023
 
 | Test Case ID | Name of Person testing | Description                          | Pass/Fail Criteria                                         | Test Method                | Test Steps                                                                                                             | Pre-requistes   | Comments |
 | ------------ | ---------------------- | ------------------------------------ | ---------------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------- | -------- |
@@ -26,13 +26,13 @@ Date: 3.15.2022
 | 4            | Aruna               | Test login api function              | login return code        | Manual Testing             | Call the API on postman with wrong username and password as parameter and check the response                           | API implemented | /        |
 | 5            |Aruna               | Test signup api function             | signup return code       | Manual Testing             | Call the API on postman with a new username/password as parameter and check the response                               | API implemented | /        |
 | 6            | Aruna               | Test signup api function             | signup return code  | Manual Testing             | Signup API return 401 code when the username found in the database and returns duplicate username as the response body | API implemented | /        |
-| 7            | Aruna               | Test logout api function             | logout return code                         | Manual Testing             | Call the logout API and check the response                                                                             | API implemented | /        |
+| 7            | Aruna               | Test Pagnation api             | logout return code                         | Manual Testing             | Call the logout API and check the response                                                                             | API implemented | /        |
 | 8            | Aruna               | Test settings api function           | setting return user data when a existing user is logged in | Integration Testing/Manual | Setting API return user categories when the username found in the database                                             | API implemented | /        |
 | 9            | Aruna               | Test setting api function            | setting return general data when a no user is logged in    | Integration Testing/Manual | Setting API return general categories when the username is not found in the database                                   | API implemented | /        |
 
 # UX Test
 
-Date: 3.19.2022
+Date: 04.03.2023
 
 | Test Case ID | Name of Person testing | Description                                                       | Pass/Fail Criteria                                                     | Test Method                | Test Steps                                                         | Pre-requistes                                                           | Comments |
 | ------------ | ---------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------------ | :---------------------------------------------------------------------- | :------- |
@@ -61,15 +61,14 @@ Date: 3.19.2022
 
 # System Test
 
-Date: 5.02.2022
+Date: 04.06.2023
 
 | Test Case ID   | Name of Person testing    | Description   | Pass/Fail Criteria   | Test Method   | Test Steps   | Pre-requistes   | Comments 
 | -------------- | ------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------------ | ---------------------------- | -------------------------------------------------------------------- | :------------------------------------------------------------------------ | :--------- |
-| 1 | Aruna | Test if a new user is able to sign up | Return 200 status code and redirect user to login page, and "user created" returned on cmdprompt | Manual Testing | Click on Log In button, next click on the Sign up link, Enter username, password and password again on the confirm password input, and click Register | Sign Up API works | / |
-| 2 | Aruna | Test if registered user is able to log in | Return 200 status code and redirect user to home page , and "Correct Username and/or Password!" returns on the cmdprompt | Manual Testing | Click on Log In button, Enter username, password and click on the Login button |Login API works | / |
+| 1 | Aruna | Test if a new user is able to sign up | Redirect user to login page, and "user created" returned on cmdprompt | Manual Testing | Click on Log In button, next click on the Sign up link, Enter username, password and password again on the confirm password input, and click Register | Sign Up API works | / |
+| 2 | Aruna | Test if registered user is able to log in | Redirect user to home page , and "Correct Username and/or Password!" returns on the cmdprompt | Manual Testing | Click on Log In button, Enter username, password and click on the Login button |Login API works | / |
 | 3 | Aruna | Test if registered user can set preferences | Return 200 status code abd redirect user to home page | Manual Testing | Click on Settings button, Under choose your area of interest, click as many checkboxes as possible and click the OK button| Settings API works | / |
 | 4 | Aruna | Test if registered user is able to search | Return 200 status code and articles based on search term, and redirect to home page | Manual Testing | Enter a search term in the search input tab and click on the Search button |Search API works | / |
-| 5 | Ravi | Test if registered user is able to perform advanced searching - exact match | Return 200 status code and articles based on search term | Manual Testing | Enter a search term in the search input tab surrounded by quotes and click on the Search button |Search API works | / |
-| 6 | Ravi | Test if registered user is able to perform advanced searching - words must appear | Return 200 status code and articles based on search term | Manual Testing | Enter a search term in the search input tab, prepend words that must appear with + and click on the Search button |Search API works | / |
-| 7 | Ravi | Test if registered user is able to see merged articles based on settings preferences| Return 200 status code and merged articles based on settings prefernces | Manual Testing | Save settings perefernces | Settings API and News Api works | / |
-| 8 | Ajay | Test if registered user is able to see articles based on category | Return 200 status code and articles based on category select | Manual Testing | Click on the menu tab  | Catgeory API works | / |
+| 5 | Ravi | Test if registered user is able to perform advanced searching - exact match | Articles based on search term | Manual Testing | Enter a search term in the search input tab surrounded by quotes and click on the Search button |Search API works | / |
+| 6 | Ravi | Test if registered user is able to perform advanced searching - words must appear | Articles based on search term | Manual Testing | Enter a search term in the search input tab, prepend words that must appear with + and click on the Search button |Search API works | / |
+
