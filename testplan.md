@@ -49,25 +49,25 @@ Five integration test cases for well designed testing.
 
 **Responsibilities**
 
-**Zhaoyuan Miao**
+**Ravi Teja**
 
 Implement the presistent Setting Function (Sprint 2 Fix)
 
 Implement backend API ebdpoint [GET /category/{category}]
 
-**Nana**
+**Ajay Pranav**
 
 Add Pagnition function
 
 Front end: Implement the 3 categories tab displaying articles of categories by fetching the API implemented by Zhaoyuan
 
-**Precious**
+**Aruna**
 
 Front end: Implement the tabs for users to choose the desired articles. (No articles displaying required at this time)
 
 Front end: Implement the home tab displaying articles of user preference by fetching the API implemented by Varshith
 
-**Varshith**
+**Eswar Teja**
 
 Update test plan and add more information about the unit test and Integration test Strategy/INFO
 Implement backend API ebdpoint [GET /news/{user}]
