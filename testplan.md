@@ -77,9 +77,9 @@ Implement backend API ebdpoint [GET /news/{user}]
 April - May
 Prepare the unit tests needed for the test driven development and develop the code April - May Apply manual/unit tesing and debug according to the test results.
 
-**Regression System Test Strategy**
+**System Test Strategy**
 
-The regression system test will have a Top-Down testing approach testing from the UI and usabilty testing, to the API and finally complete with database unit testing.
+The system test will have a Top-Down testing approach testing from the UI and usabilty testing, to the API and finally complete with database unit testing.
 • Test cases with high Priority are executed first before medium and low priority. The lower level modules will be mocked until integrated.
 • Manual testing will be applied to the landing page to verify all tabs, menus, and required features are displaying correctly. All required functions and features should be appropriate. Apply unit test for Usability to ensure all link are working properly. Links will take users to correct webpage.
 • Apply unit test for API to ensure the correct respose and ensure Bug Reporting tool system is error free.  Manual Testing call the API on with correct username and password as parameter and check the response.
